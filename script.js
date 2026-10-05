@@ -6,7 +6,7 @@
 const CONFIG = {
   nome: "Meu amor,",
   gif: "meu-gif.gif",
-  musica: "musica.mp3",
+  musica: "Mac Miller - Congratulations feat. Bilal (No Intro) - J.mp3",
   titulo: "Oi, meu amor... ♡",
   mensagemInicial:
     "Eu fiz isso porque talvez eu não saiba exatamente\ncomo você quer que eu seja...",
