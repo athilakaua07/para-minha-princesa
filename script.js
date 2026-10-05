@@ -12,7 +12,7 @@ const CONFIG = {
     "Eu fiz isso porque talvez eu não saiba exatamente\ncomo você quer que eu seja...",
   textoCarta:
     "Eu não espero que você simplesmente me diga tudo de uma vez.\n\nSó quero que saiba que existe espaço para você falar.\n\nPode me dizer o que você gosta.\nO que não gosta.\nO que sente falta.\nO que gostaria que eu fizesse diferente.\n\nEu quero aprender você.\n\nE fazer a minha parte também: prestar atenção, refletir e cuidar das minhas atitudes. Você não precisa carregar isso sozinha.",
-  assinatura: "Com amor, Kauness ♡",
+  assinatura: "Com amor, seu homem ♡",
   interface: {
     tituloPagina: "Uma cartinha para você ♡",
     marca: "para você",
