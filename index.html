@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff6f5" />
+    <meta
+      name="description"
+      content="Uma pequena carta, um coração aberto e vontade de aprender a amar melhor."
+    />
+    <title>Uma cartinha para você ♡</title>
+    <link rel="icon" href="assets/coracao.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#sincero" data-text="interface.pular"></a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+    <div class="ambient" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#inicio"
+        ><span class="brand-heart" aria-hidden="true">♡</span
+        ><span data-text="interface.marca"></span
+        ><span class="brand-dot" aria-hidden="true">•</span
+        ><span class="brand-note" data-text="interface.feito"></span
+      ></a>
+      <div class="music-control">
+        <button
+          id="music-button"
+          class="music-button"
+          type="button"
+          aria-pressed="false"
+        >
+          <span class="music-icon" aria-hidden="true">♫</span
+          ><span data-text="interface.musica"></span
+          ><span class="music-indicator" aria-hidden="true"></span>
+        </button>
+        <span id="music-status" class="music-status" role="status"></span>
+      </div>
+      <audio id="music" loop preload="none"></audio>
+    </header>
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-decor decor-flower" aria-hidden="true">✿</div>
+        <div class="hero-decor decor-star" aria-hidden="true">✧</div>
+        <div class="hero-decor decor-heart" aria-hidden="true">♡</div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">
+            <span aria-hidden="true">✧</span>
+            <span data-text="interface.intro"></span>
+            <span aria-hidden="true">✧</span>
+          </p>
+          <div class="illustration-wrap">
+            <div class="illustration-halo" aria-hidden="true"></div>
+            <span class="illustration-spark spark-one" aria-hidden="true"
+              >✧</span
+            ><span class="illustration-spark spark-two" aria-hidden="true"
+              >✦</span
+            >
+            <img id="hero-gif" width="300" height="280" alt="" />
+            <span
+              class="handwritten illustration-note"
+              data-text="interface.bilhete"
+            ></span>
+            <span class="little-heart" aria-hidden="true">♡</span>
+          </div>
+          <h1 data-text="titulo"></h1>
+          <p class="hero-description" data-text="mensagemInicial"></p>
+          <a class="button primary-button" href="#sincero"
+            ><span data-text="interface.comecar"></span
+            ><span aria-hidden="true">♡</span></a
+          >
+          <p class="hero-footnote">
+            <span aria-hidden="true">♡</span>
+            <span data-text="interface.semPressa"></span>
+          </p>
+        </div>
+        <a href="#sincero" class="scroll-cue"
+          ><span data-text="interface.rolar"></span
+          ><span aria-hidden="true">↓</span></a
+        >
+        <div class="hero-bottom" aria-hidden="true">
+          <span>♡</span><i></i><span>✿</span><i></i><span>♡</span>
+        </div>
+      </section>
+      <section
+        id="sincero"
+        class="chapter sincere reveal"
+        aria-labelledby="sincero-title"
+      >
+        <div class="chapter-label">
+          <span>01</span>
+          <p data-text="sincero.etiqueta"></p>
+        </div>
+        <div class="sincere-layout">
+          <div>
+            <h2 id="sincero-title" data-text="sincero.titulo"></h2>
+            <div class="body-copy" data-text="sincero.texto"></div>
+          </div>
+          <aside class="little-note">
+            <span class="note-tape" aria-hidden="true"></span
+            ><span class="note-heart" aria-hidden="true">♡</span>
+            <p data-text="sincero.bilhete"></p>
+            <span class="handwritten" data-text="sincero.rodape"></span>
+          </aside>
+        </div>
+      </section>
+      <section
+        id="entender"
+        class="understand chapter reveal"
+        aria-labelledby="entender-title"
+      >
+        <div class="chapter-label centered">
+          <span>02</span>
+          <p data-text="entender.etiqueta"></p>
+        </div>
+        <h2 id="entender-title" data-text="entender.titulo"></h2>
+        <p class="body-copy centered-copy" data-text="entender.texto"></p>
+        <div id="listening-cards" class="listening-cards"></div>
+        <p class="section-footnote" data-text="entender.rodape"></p>
+      </section>
+      <section
+        id="mudar"
+        class="change-section reveal"
+        aria-labelledby="mudar-title"
+      >
+        <div class="change-inner chapter">
+          <div class="heart-orbit">
+            <span class="orbit-star" aria-hidden="true">✧</span
+            ><button
+              class="beating-heart"
+              type="button"
+              data-label="interface.coracao"
+            >
+              ♥</button
+            ><span class="handwritten" data-text="mudar.bilhete"></span>
+          </div>
+          <div>
+            <div class="chapter-label">
+              <span>03</span>
+              <p data-text="mudar.etiqueta"></p>
+            </div>
+            <h2 id="mudar-title" data-text="mudar.titulo"></h2>
+            <p class="body-copy" data-text="mudar.texto"></p>
+            <p class="change-emphasis" data-text="mudar.destaque"></p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="carta"
+        class="letter-section chapter reveal"
+        aria-labelledby="carta-title"
+      >
+        <div class="chapter-label centered">
+          <span>04</span>
+          <p data-text="carta.etiqueta"></p>
+        </div>
+        <h2 id="carta-title" data-text="carta.titulo"></h2>
+        <p class="section-intro" data-text="carta.intro"></p>
+        <div class="envelope-scene">
+          <button
+            class="envelope-shell"
+            type="button"
+            aria-expanded="false"
+            aria-controls="letter-paper"
+            data-label="interface.abrirCarta"
+          >
+            <span class="envelope-flap" aria-hidden="true"></span
+            ><span class="envelope-front" aria-hidden="true"></span
+            ><span class="envelope-seal" aria-hidden="true">♥</span
+            ><span
+              class="envelope-address"
+              aria-hidden="true"
+              data-text="carta.destinatario"
+            ></span>
+          </button>
+          <article id="letter-paper" class="letter-paper" hidden>
+            <span class="letter-heart" aria-hidden="true">♡</span>
+            <p class="letter-greeting" data-text="nome"></p>
+            <div class="letter-copy" data-text="textoCarta"></div>
+            <p class="letter-signature handwritten" data-text="assinatura"></p>
+          </article>
+        </div>
+        <button
+          id="letter-toggle"
+          class="letter-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="letter-paper"
+        >
+          <span aria-hidden="true">♡</span><span id="letter-toggle-text"></span>
+        </button>
+        <p class="section-footnote" data-text="carta.rodape"></p>
+      </section>
+      <section
+        id="promessa"
+        class="promise chapter reveal"
+        aria-labelledby="promessa-title"
+      >
+        <div class="chapter-label centered">
+          <span>05</span>
+          <p data-text="promessa.etiqueta"></p>
+        </div>
+        <h2 id="promessa-title" data-text="promessa.titulo"></h2>
+        <p class="body-copy centered-copy" data-text="promessa.intro"></p>
+        <blockquote data-text="promessa.destaque"></blockquote>
+        <p class="body-copy centered-copy" data-text="promessa.texto"></p>
+        <p class="handwritten promise-ending" data-text="promessa.fecho"></p>
+        <span class="promise-flower" aria-hidden="true">✿</span>
+      </section>
+      <section id="ouvir" class="final-section" aria-labelledby="final-title">
+        <div class="final-star" aria-hidden="true">✧</div>
+        <div class="final-heart" aria-hidden="true">♡</div>
+        <div class="final-content reveal">
+          <p class="eyebrow" data-text="final.etiqueta"></p>
+          <p class="final-prelude" data-text="final.intro"></p>
+          <h2 id="final-title" data-text="final.pergunta"></h2>
+          <p class="final-after" data-text="final.texto"></p>
+          <button id="listen-button" class="button final-button" type="button">
+            <span data-text="final.botao"></span
+            ><span aria-hidden="true">♡</span>
+          </button>
+          <p class="final-footnote" data-text="final.rodape"></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#inicio" data-text="assinatura"></a
+      ><span data-text="interface.fim"></span><span aria-hidden="true">♡</span>
+    </footer>
+    <dialog id="listening-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" data-label="interface.fechar">
+        ×
+      </button>
+      <div class="dialog-heart" aria-hidden="true">♡</div>
+      <p class="eyebrow" data-text="final.dialogEtiqueta"></p>
+      <h2 id="dialog-title" data-text="final.mensagem"></h2>
+      <p data-text="final.dialogTexto"></p>
+      <button
+        class="button primary-button dialog-return"
+        type="button"
+        data-text="interface.voltar"
+      ></button>
+    </dialog>
+    <div id="effects" aria-hidden="true"></div>
+    <noscript
+      ><p class="noscript-message">
+        Ative o JavaScript para ler esta cartinha e abrir o envelope. ♡
+      </p></noscript
+    >
+  </body>
+</html>
